@@ -41,7 +41,7 @@ function checkIfZero(toCheck) {
 }
 
 function changeValue(newValue, numNumber){
-  let changeTo = newValue;
+  let changeTo = parseInt(newValue);
   if (numNumber == 1) num1 = changeTo;
   else if (numNumber == 2) num2 = changeTo;
   run();
