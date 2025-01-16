@@ -1,0 +1,9 @@
+Jeg prøvde bare å trykke + for ny.
+Jeg tror ikke den har noen suffix?
+Virker som den bare er en generell filtype, så dette blir inte ressant.
+    Ressant er såklart det motsatte av interessant.
+Trykka crtl+shift+s og lagret som 'Alle filer "*"' 
+> Question, fungerer ***Markdown***?
+- finn
+- ut
+Nope..

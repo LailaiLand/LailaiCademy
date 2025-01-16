@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The most horny text you ever did saw</title>
+    <style>
+      h1.redHot {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 onclick="alert('Bra klikka!')">Jeg klikker om du ikke klikker</h1> -->
+    <!-- <h1 onclick="braKlikka()">Jeg klikker om du ikke klikker</h1> -->
+    <!-- <h1 id="endremål" onclick="endreSkrift()">
+      Jeg klikker om du ikke klikker
+    </h1> -->
+    <h1 onclick="endreSkrift()">Jeg har et enormt klikkebehov!</h1>
+    <h1 id="endremål">
+      Jeg er cuck og digger når du trykker på tekst med klikkebehov!
+    </h1>
+    <script>
+      // alert("Yo mei alerter!");
+      var counter = 0;
+      var changeMe = document.getElementById("endremål");
+      //   function braKlikka() {
+      //     alert("Du");
+      //     alert("klikka");
+      //     alert("bra!");
+      //   }
+      function endreSkrift() {
+        changeMe.innerHTML = "Du klikka så bra at jeg blir våt i trusa";
+        changeMe.style.backgroundColor = "pink";
+        counter++;
+        let addText = "";
+        for (let i = 0; i < counter; i++) {
+          addText += " trykk mer!!";
+        }
+        if (counter > 10 && changeMe.classList.contains != "redHot")
+          changeMe.classList.add("redHot");
+        changeMe.innerHTML += addText;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+* {
+  background-color: darkgray;
+}
+
+h1 {
+  color: blueviolet;
+  background-color: aquamarine;
+}
+
+p {
+  color: chocolate;
+}
+
+div {
+  color: aqua;
+  background-color: fuchsia;
+  padding: 50px;
+  margin: 60px;
+  border: white 10px solid;
+  width: 70px;
+}
+
+div.alternativ {
+    color: white;
+    border: white 10px dashed;
+}

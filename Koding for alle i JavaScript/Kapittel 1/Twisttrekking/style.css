@@ -1,0 +1,39 @@
+*{
+    background-color: darkgray;
+}
+
+button {
+    background-color: blanchedalmond;
+    width: fit-content;
+}
+
+input {
+    background-color: white;
+    width: 10%;
+}
+
+div.tab, div.ultratab {
+    border: 5px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+}
+
+div.tab {flex-direction: column;}
+div.ultratab {flex-direction: row;}
+
+div.entry {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+span {
+    font-weight: 800;
+    color: rgb(252, 67, 0);
+    background-color: rgb(0, 190, 252);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

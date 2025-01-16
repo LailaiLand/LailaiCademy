@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twisttrekking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tab" id="page">
+      <span><button onclick="showMenu()">≡</button> Twisttrekking</span>
+      <div class="entry">
+        <div class="headtext">Deltagere <button>+</button></div>
+        <div class="headtext">Antall lodd</div>
+      </div>
+      <div class="entry">
+        <div>Karsten</div>
+        <input type="number" value="2" />
+      </div>
+      <div class="entry">
+        <div>Petra</div>
+        <input type="number" value="1" />
+      </div>
+      <div class="entry">
+        <div>Karen</div>
+        <input type="number" value="0" />
+      </div>
+      <div class="entry">
+        <div>Pepe</div>
+        <input type="number" value="1" />
+      </div>
+      <div class="entry">
+        <button onclick="showWinner()">Finn vinner(e)</button> <input type="number" value="1" />
+      </div>
+    </div>
+    <script>
+      var webpage = document.getElementById("page");
+
+      function showDraw() {
+        webpage.innerHTML = /*HTML*/ `
+          <span ><button onclick="showMenu()">≡</button> Twisttrekking</span>
+          <div class="entry">
+            <div class="headtext">Deltagere <button>+</button></div>
+            <div class="headtext">Antall lodd</div>
+          </div>
+          <div class="entry">
+            <div>Karsten</div>
+            <input type="number" value="2" />
+          </div>
+          <div class="entry">
+            <div>Petra</div>
+            <input type="number" value="1" />
+          </div>
+          <div class="entry">
+            <div>Karen</div>
+            <input type="number" value="0" />
+          </div>
+          <div class="entry">
+            <div>Pepe</div>
+            <input type="number" value="1" />
+          </div>
+          <div class="entry">
+            <button onclick="showWinner()">Finn vinner(e)</button> <input type="number" value="1" />
+          </div>
+        </div>
+        `;
+        webpage.className = "tab";
+      }
+
+      function showWinner() {
+        webpage.innerHTML = /*HTML*/ `
+          <span ><button onclick="showMenu()">≡</button> Twisttrekking</span>
+          <div class="entry">
+            <small>Tirsdag 07.01.25</small>
+            <b>Pepe vant!</b>
+            <small>Lodd: Karsten, Karsten, Petra, Pepe</small>
+          </div>
+          <div class="entry">
+            <small>Mandag 06.01.25</small>
+            <b>Petra og Kari vant!</b>
+            <small>Lodd: Karsten, Karsten, Petra, Petra, Kari, Kari, Pepe</small>
+          </div>
+          </div>
+        `;
+        webpage.className = "tab";
+      }
+      function showMenu() {
+        webpage.innerHTML = /*HTML*/ `
+        <span><button onclick="hideMenu()">≡</button> Twisttrekking <br />
+        <button onclick="showDraw()">Deltakere</button>
+        <button onclick="showWinner()">Vinnerliste</button>
+        <button onclick="showAbout()">Om</button>
+        <button>Avslutt</button>
+        </span>
+        <div>
+          <div class="entry">
+            <small>Tirsdag 07.01.25</small>
+            <b>Pepe vant!</b>
+            <small>Lodd: Karsten, Karsten, Petra, Pepe</small>
+          </div>
+          <div class="entry">
+            <small>Mandag 06.01.25</small>
+            <b>Petra og Kari vant!</b>
+            <small>Lodd: Karsten, Karsten, Petra, Petra, Kari, Kari, Pepe</small>
+          </div>
+        </div>
+        `;
+        webpage.className = "ultratab";
+      }
+
+      function showAbout() {
+        webpage.innerHTML = /*HTML*/ `
+          <span ><button onclick="showMenu()">≡</button> Twisttrekking</span>
+          <div>
+            Dette er en webside for å vise hvordan ting kan bli om du lager Twisttrekking
+          </div>
+        `;
+        webpage.className = "tab";
+      }
+      function hideMenu() {
+        showWinner();
+      }
+    </script>
+  </body>
+</html>
