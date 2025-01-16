@@ -6,12 +6,14 @@ let num2 = 0;
 run();
 
 function run() {
-  var addition = num1 + num2;
-  var subtraction = num1 - num2;
-  var multiplication = num1 * num2;
-  var division = num1 / num2;
+    console.log("testing at det kjører??");
+  let addition = num1 + num2;
+  let subtraction = num1 - num2;
+  let multiplication = num1 * num2;
+  let division = num1 / num2;
+  let html = "";
 
-  var tekst = /*HTML*/ `
+   html += /*HTML*/ `
         <h1>Kaaaaaalkulator!</h1>
         <p>Velg to tall og se resultatene!</p>
         <div class="choice">
@@ -31,5 +33,8 @@ function run() {
             ${num1} / ${num2} = ${division} <br/>
         </div>
     `;
-    app.innerHTML = tekst;
+    // console.log(app + "inne i run");
+    app.innerHTML = html;
 }
+// console.log(app + "utenfor run");
+// console.log(document.body + "document");
